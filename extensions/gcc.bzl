@@ -287,8 +287,8 @@ def _get_info(mctx):
     """
     root = None
     for mod in mctx.modules:
-        if not mod.is_root:
-            fail("Only the root module can use the 'gcc' extension!")
+      #if not mod.is_root:
+      #      fail("Only the root module can use the 'gcc' extension!")
         root = mod
 
     toolchains = _get_toolchains(root.tags.toolchain)
